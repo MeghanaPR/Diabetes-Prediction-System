@@ -18,29 +18,39 @@ A Machine Learning–powered Diabetes Prediction Web Application developed using
 
 🎯 Features:
 
-🔍 Prediction - Predicts whether a patient is diabetic based on input features:
+   🔍 Prediction - Predicts whether a patient is diabetic based on input features:
 
-   - Pregnancies
+      - Pregnancies
 
-   - Glucose
+      - Glucose
 
-   - Blood Pressure
+      - Blood Pressure
 
-   - Skin Thickness
+      - Skin Thickness
 
-   - Insulin
+      - Insulin
 
-   - BMI
+      - BMI
 
-   - Diabetes Pedigree Function (DPF)
+      - Diabetes Pedigree Function (DPF)
 
-   - Age
+      - Age
 
-🗃 Database Logging - Every prediction made through the web app is logged into a MySQL database for record-keeping and analysis.
+   🗃 Database Logging - Every prediction made through the web app is logged into a MySQL database for record-keeping and analysis.
 
-📊 Visualization - Includes a /visualize route (template placeholder) to embed or link to Tableau dashboards using historical data stored in MySQL.
+   📊 Visualization - Includes a /visualize route (template placeholder) to embed or link to Tableau dashboards using historical data stored in MySQL.
 
-📊 Tableau Integration
+🧠 Model Training:
+
+   - Dataset: PIMA Indians Diabetes Dataset
+
+   - Missing values in key medical fields are handled using mean/median imputation.
+
+   - Trained using Random Forest Classifier (n_estimators=20)
+
+   - Saved as diabetes-prediction-rfc-model.pkl for deployment.
+
+📊 Tableau Integration:
 
     - Data stored in the MySQL Predictions table can be connected to Tableau for interactive dashboards.
 
